@@ -47,6 +47,7 @@ public class TrainingCenter {
     @NotBlank(message = "Contact phone is required")
     private String contactPhone;
 
+
     @PrePersist
     public void prePersist() {
         this.createdOn = Instant.now();
